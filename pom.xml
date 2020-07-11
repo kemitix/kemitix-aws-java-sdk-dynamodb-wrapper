@@ -13,7 +13,7 @@
 
     <groupId>net.kemitix.aws</groupId>
     <artifactId>kemitix-aws-java-sdk-dynamodb-wrapper</artifactId>
-    <version>1.11.816</version><!-- must match ${aws-java-sdk.version} -->
+    <version>1.11.820</version><!-- must match ${aws-java-sdk.version} -->
 
     <description>
         Wrapper for the AWS Java SDK for DynamoDB - only releases when there
@@ -21,7 +21,7 @@
     </description>
 
     <properties>
-        <aws-java-sdk.version>1.11.816</aws-java-sdk.version>
+        <aws-java-sdk.version>1.11.820</aws-java-sdk.version>
         <jackson-databind.version>2.11.1</jackson-databind.version>
         <jackson-dataformat-cbor.version>2.11.1</jackson-dataformat-cbor.version>
         <commons-logging.version>1.2</commons-logging.version>
@@ -30,6 +30,7 @@
 
         <tiles-maven-plugin.version>2.17</tiles-maven-plugin.version>
         <kemitix-tiles.version>2.7.0</kemitix-tiles.version>
+        <commons-codec.version>1.14</commons-codec.version>
     </properties>
 
     <dependencies>
@@ -50,6 +51,10 @@
                     <artifactId>commons-logging</artifactId>
                     <groupId>commons-logging</groupId>
                 </exclusion>
+                <exclusion>
+                    <artifactId>commons-codec</artifactId>
+                    <groupId>commons-codec</groupId>
+                </exclusion>
             </exclusions>
         </dependency>
         <dependency>
@@ -66,6 +71,11 @@
             <artifactId>commons-logging</artifactId>
             <groupId>commons-logging</groupId>
             <version>${commons-logging.version}</version>
+        </dependency>
+        <dependency>
+            <artifactId>commons-codec</artifactId>
+            <groupId>commons-codec</groupId>
+            <version>${commons-codec.version}</version>
         </dependency>
     </dependencies>
 
