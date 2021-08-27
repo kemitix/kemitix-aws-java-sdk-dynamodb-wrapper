@@ -13,7 +13,7 @@
 
     <groupId>net.kemitix.aws</groupId>
     <artifactId>kemitix-aws-java-sdk-dynamodb-wrapper</artifactId>
-    <version>1.12.45</version><!-- must match ${aws-java-sdk.version} -->
+    <version>1.12.56</version><!-- must match ${aws-java-sdk.version} -->
 
     <description>
         Wrapper for the AWS Java SDK for DynamoDB - only releases when there
