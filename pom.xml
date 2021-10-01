@@ -22,7 +22,7 @@
 
     <properties>
         <aws-java-sdk.version>1.12.78</aws-java-sdk.version>
-        <jackson.version>2.12.5</jackson.version>
+        <jackson.version>2.13.0</jackson.version>
         <commons-logging.version>1.2</commons-logging.version>
 
         <maven-graph-plugin.version>1.45</maven-graph-plugin.version>
